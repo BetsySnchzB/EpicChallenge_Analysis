@@ -462,13 +462,14 @@
           <div class="brand-title">MetroExpress BRT Launch Analytics</div>
         </div>
         <nav class="nav" aria-label="Primary">
-          <a href="#context">Context</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#overview">Overview</a>
           <a href="#snapshot">Snapshot</a>
-          <a href="#dashboards">Dashboards & Insights</a>
+          <a href="#dashboards">Dashboards</a>
           <a href="#ml-analysis">ML Analysis</a>
           <a href="#recommendations">Recommendations</a>
         </nav>
-        <a class="btn btn-primary" href="#dashboard">Explore dashboard</a>
+        <a class="btn btn-primary" href="#dashboards">Explore dashboards</a>
       </div>
     </div>
   </div>
@@ -499,185 +500,323 @@
 
         <p class="hero-lede">
           Early launch insights into ridership patterns and payment behavior for
-          Miami-Dade County’s first all-electric Bus Rapid Transit system.
+          Miami-Dade County's first all-electric Bus Rapid Transit system.
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#dashboard">Explore the dashboard</a>
+          <a class="btn btn-primary" href="#dashboards">Explore the dashboards</a>
           <a class="btn" href="#recommendations">View recommendations</a>
         </div>
       </div>
 
-      <aside class="meta-card" aria-label="Project summary">
-        <p class="meta-title">Engagement summary</p>
-        <div class="meta-grid">
-          <p class="meta-item">
-            <span class="meta-label">Client</span>
-            <span class="meta-value">Miami-Dade County DTPW</span>
-          </p>
-          <p class="meta-item">
-            <span class="meta-label">Program</span>
-            <span class="meta-value">Fare modernization</span>
-          </p>
-          <p class="meta-item">
-            <span class="meta-label">Data window</span>
-            <span class="meta-value">Oct 27, 2025 - Apr 27, 2026</span>
-          </p>
-          <p class="meta-item">
-            <span class="meta-label">Methods</span>
-            <span class="meta-value">EDA, ML, dashboards</span>
-          </p>
-        </div>
-      </aside>
+<aside class="meta-card" aria-label="Project summary">
+  <p class="meta-title">Engagement summary</p>
+  
+  <div class="meta-grid">
+    <p class="meta-item">
+      <span class="meta-label">Client</span>
+      <span class="meta-value">Miami-Dade County DTPW</span>
+    </p>
+    <p class="meta-item">
+      <span class="meta-label">Program</span>
+      <span class="meta-value">Fare Modernization</span>
+    </p>
+    <p class="meta-item">
+      <span class="meta-label">Team Analysis</span>
+      <span class="meta-value">Oct 27 - Nov 7, 2025<br><span style="font-size: 0.84rem; font-weight: 400;">(real launch data)</span></span>
+    </p>
+    <p class="meta-item">
+      <span class="meta-label">Solo Extension</span>
+      <span class="meta-value">Oct 27 '25 - Apr 27 '26<br><span style="font-size: 0.84rem; font-weight: 400;">(synthetic data)</span></span>
+    </p>
+    <p class="meta-item">
+      <span class="meta-label">Team Methods</span>
+      <span class="meta-value">EDA, recommendations</span>
+    </p>
+    <p class="meta-item">
+      <span class="meta-label">Solo Methods</span>
+      <span class="meta-value">Dashboards, ML, ROI</span>
+    </p>
+  </div>
+</aside>
     </div>
   </div>
 </header>
 
-  <main>
-    <section id="context">
-      <div class="container">
-        <div class="section-head">
-          <h2>Miami-Dade Transit: A System Poised for Growth</h2>
-        </div>
-        <p>Miami-Dade County operates the nation's 10th-largest public transit system, moving approximately 300,000 riders daily across Metrorail, Metrobus, and now, MetroExpress BRT.</p>
-        <p>As South Florida continues to grow as a hub for tech, innovation, and urban development, rider expectations are evolving too. Today's transit users expect seamless digital experiences,tap-to-pay, real-time updates, integrated networks,the kind of modern infrastructure they encounter in cities worldwide.</p>
+<!-- County's 3-Phase Modernization Plan Banner -->
+<div style="background: rgba(15, 118, 110, 0.04); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 16px 0;">
+  <div class="container">
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+      <div style="flex: 0 0 auto;">
+        <p style="margin: 0; font-size: 0.84rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.08em;">
+          County's Modernization Plan
+        </p>
+      </div>
+      <div style="flex: 1 1 auto; display: flex; gap: 24px; flex-wrap: wrap; font-size: 0.92rem;">
+        <span><strong>Phase 1:</strong> 14-Station BRT (analyzed in this project)</span>
+        <span style="color: var(--muted);">Phase 2: 1,000-Bus Fleet Integration (planned)</span>
+        <span style="color: var(--muted);">Phase 3: Metrorail System Integration (planned)</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="cards-2">
-          <div class="card">
-            <h3>Three-Phase Fare Modernization Program</h3>
-            <p><strong>Phase 1: MetroExpress BRT.</strong> Launch the county's first Bus Rapid Transit system with next-generation fare technology, contactless payment, and digital ticketing infrastructure.</p>
-            <p><strong>Phase 2: Metrobus Fleet Integration.</strong> Extend the new payment platform across approximately 1,000 Metrobus vehicles, creating consistency across the bus network.</p>
-            <p><strong>Phase 3: Metrorail System Integration.</strong> Complete the transformation by bringing Metrorail into the unified fare system, enabling true cross-modal, tap-and-go transit.</p>
-          </div>
-          <div class="card">
-            <h3>Outcome</h3>
-            <p><strong>The Result:</strong> One integrated payment platform across the entire transit network, laying the foundation for an account-based, data-rich system that can expand to other transportation infrastructure as Miami continues to grow.</p>
-            <div class="callout" style="margin-top: 12px;">
-              <p><strong>What this analysis provides:</strong> A baseline view of rider payment behavior and station performance during the first weeks of MetroExpress operations.</p>
-            </div>
-          </div>
+<main>
+<!-- Project Timeline Section -->
+<section id="timeline" style="padding: 56px 0; background: var(--bg); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 32px;">
+      <h2 style="margin: 0 0 8px;">Project Evolution</h2>
+      <p style="color: var(--muted); margin: 0; max-width: 70ch; margin-left: auto; margin-right: auto;">
+        This analysis evolved from a rapid team internship delivering immediate insights 
+        to an independent framework demonstrating advanced analytical capabilities.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
+      <!-- Team Phase -->
+      <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <span style="font-size: 1.5rem;">👥</span>
+          <h3 style="margin: 0;">Team Analysis</h3>
+        </div>
+        <p style="color: var(--muted); font-size: 0.95rem; margin: 0 0 12px;">
+          <strong>Oct-Nov 2025</strong> · EPIC Challenge Internship
+        </p>
+        
+        <p style="margin: 0 0 10px; font-size: 0.95rem;"><strong>Team members:</strong><br>
+         Betsy Sanchez, Sally Posey, Anabel Ferreiro Perez</p>
+
+        <p style="margin: 12px 0 8px; font-weight: 600; font-size: 0.9rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.05em;">What we delivered:</p>
+        <ul style="margin: 0 0 12px 18px; font-size: 0.95rem;">
+          <li>Exploratory analysis of 11-day launch period (3,596 transactions)</li>
+          <li>PowerPoint presentation with basic graphs</li>
+          <li>Pattern identification: 69% cash dominance, station concentration</li>
+          <li>Recommendations for digital adoption and future ML models</li>
+        </ul>
+
+        <div style="margin-top: auto; padding: 10px; background: rgba(15, 118, 110, 0.06); border-radius: 8px;">
+          <p style="margin: 0; font-size: 0.92rem;">
+            <strong>✓ Featured in Miami-Dade County Newsletter</strong>
+          </p>
         </div>
       </div>
-    </section>
 
-    <section class="subtle" id="overview">
-      <div class="container">
-        <div class="section-head">
-          <h2>MetroExpress: South Florida's First Bus Rapid Transit</h2>
-          <p class="section-subtitle">A major milestone: Miami-Dade County's first-ever Bus Rapid Transit system and the longest all-electric BRT corridor in the United States.</p>
+      <!-- Solo Phase -->
+      <div class="card" style="border: 2px solid var(--accent); display: flex; flex-direction: column; height: 100%;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+          <span style="font-size: 1.5rem;">👤</span>
+          <h3 style="margin: 0;">Independent Extension</h3>
         </div>
-        <p><strong>The route.</strong> A 20-mile dedicated corridor running along the South Dade TransitWay, parallel to US-1, connecting Florida City in the south to Dadeland South Metrorail Station in the north.</p>
-        <p><strong>The connection.</strong> MetroExpress serves as a critical link, tying together all of South Dade's communities with direct Metrorail access. Along the way, it integrates with existing Metrobus routes and provides connections to park-and-ride facilities.</p>
-        <p><strong>Why it matters.</strong> For communities in Homestead, Florida City, and South Dade, this isn't just a new bus route, it's rapid, reliable transit access to employment centers, educational institutions, and services throughout Miami-Dade County.</p>
+        <p style="color: var(--muted); font-size: 0.95rem; margin: 0 0 12px;">
+          <strong>Dec 2025-Jan 2026</strong> · Solo Development
+        </p>
+        
+        <p style="margin: 0 0 10px; font-size: 0.95rem;"><strong>Developer:</strong><br>
+        Betsy Sanchez</p>
 
-        <div class="card" style="margin-top: 18px;">
-          <h3>What makes MetroExpress different</h3>
-          <p>MetroExpress isn't a traditional bus route, it's designed to function like a rail line on wheels, delivering speed, reliability, and a premium rider experience.</p>
-          <p><strong>Dedicated infrastructure:</strong> Instead of navigating through regular traffic, MetroExpress operates on the exclusive South Dade TransitWay. At intersections, the system uses transit signal priority, giving buses green lights during peak hours to maintain speed and schedule reliability.</p>
-          <p><strong>Protected crossings:</strong> Where the TransitWay crosses regular roads, automated gate arms and warning lights activate, just like a railroad crossing, protecting the BRT lane and ensuring safety for both riders and drivers.</p>
-          <p><strong>The experience:</strong> From a rider's perspective, it's fast, predictable, and comfortable, more akin to light rail than conventional bus service.</p>
-        </div>
-      </div>
-    </section>
+        <p style="margin: 12px 0 8px; font-weight: 600; font-size: 0.9rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.05em;">What I built:</p>
+        <ul style="margin: 0 0 12px 18px; font-size: 0.95rem;">
+          <li>Interactive Tableau dashboards (all 3 shown below)</li>
+          <li>Synthetic data generation (87,875 transactions, 6 months)</li>
+          <li>Three ML models: time-series, classification, clustering</li>
+          <li>Strategic framework with $29K savings & 320% ROI projections</li>
+          <li>This comprehensive case study website</li>
+        </ul>
 
-    <section id="launch">
-      <div class="container">
-        <div class="section-head">
-          <h2>Phase 1: Officially Launched</h2>
-          <p class="section-subtitle">On October 27, 2025, MetroExpress began service with 14 brand-new stations along the South Dade TransitWay.</p>
-        </div>
-
-        <div class="cards-2">
-          <div class="card">
-            <h3>Station amenities</h3>
-            <p>Each station is designed for comfort and convenience:</p>
-            <ul>
-              <li>Free parking (at most locations)</li>
-              <li>Secure bike storage</li>
-              <li>Climate-controlled waiting areas</li>
-              <li>Free WiFi connectivity</li>
-              <li>Device charging stations</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Fare technology</h3>
-            <p>Every station features modern payment infrastructure:</p>
-            <ul>
-              <li>Two Genfare ticket vending machines (TVMs)</li>
-              <li>Two automated fare gates</li>
-              <li>Support for cash, credit/debit cards, and contactless payment</li>
-              <li>Integration with the GO Miami-Dade Transit app</li>
-            </ul>
-          </div>
-        </div>
-
-        <p style="margin-top: 16px;">The launch of Phase 1 marks the beginning of Miami-Dade's transition to next-generation transit technology and operations.</p>
-      </div>
-    </section>
-
-    <section class="subtle" id="challenge">
-      <div class="container">
-        <div class="section-head">
-          <h2>The Exploratory Challenge</h2>
-        </div>
-
-        <p>During a six-week EPIC Challenge micro-internship through Miami Dade College and Miami Tech Works, I had the opportunity to work with Miami-Dade County's Department of Transportation and Public Works on an exploratory data analysis project.</p>
-        <p>DTPW presented us with an interesting opportunity: they had extensive data from the new MetroExpress BRT launch, ticket sales, fare validations, station-level transactions, but they wanted to understand what insights could be extracted from it.</p>
-        <p>Rather than arriving with a pre-defined problem to solve, the challenge was more exploratory: "Here's the data. What can you discover? What patterns emerge? What recommendations would you make?"</p>
-
-        <div class="card" style="margin-top: 18px;">
-          <h3>Two areas of interest emerged</h3>
-          <ul>
-            <li>How can we increase ridership on the new BRT system?</li>
-            <li>How can we encourage more digital payment adoption?</li>
-          </ul>
-        </div>
-
-        <div class="callout" style="margin-top: 18px;">
-          <p><strong>Approach:</strong> We consolidated data from the Genfare ticketing system covering the first weeks of service (October 27 - November 7, 2025), built an integrated dataset, and created visualizations that reveal payment patterns, station performance, and ridership behavior.</p>
+        <div style="margin-top: auto; padding: 10px; background: rgba(15, 118, 110, 0.06); border-radius: 8px;">
+          <p style="margin: 0; font-size: 0.92rem;">
+            <strong>✓ Production-ready analytical framework</strong>
+          </p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="snapshot">
-      <div class="container">
-        <div class="section-head">
-          <h2>Launch Period Snapshot</h2>
-          <p class="section-subtitle">October 27 - November 7, 2025</p>
-        </div>
+    <div class="callout" style="margin-top: 20px;">
+      <p style="margin: 0;"><strong>Note:</strong> The team analysis provided rapid insights during the critical launch period. The independent extension demonstrates advanced capabilities the county could deploy long-term with sufficient data.</p>
+    </div>
+  </div>
+</section>
 
-        <div class="metrics-grid" aria-label="Key metrics">
-          <div class="metric">
-            <div class="metric-value">3,596</div>
-            <div class="metric-label">Tickets sold</div>
-          </div>
-          <div class="metric">
-            <div class="metric-value">69%</div>
-            <div class="metric-label">Cash payments</div>
-          </div>
-          <div class="metric">
-            <div class="metric-value">31%</div>
-            <div class="metric-label">Digital payments</div>
-          </div>
-          <div class="metric">
-            <div class="metric-value">14</div>
-            <div class="metric-label">Active stations</div>
-          </div>
-        </div>
+<!-- BRT Overview Section -->
+<section class="subtle" id="overview">
+  <div class="container">
+    <div class="section-head">
+      <h2>MetroExpress: South Florida's First Bus Rapid Transit</h2>
+      <p class="section-subtitle">
+        Miami-Dade County's first-ever BRT system and the longest all-electric 
+        BRT corridor in the United States.
+      </p>
+    </div>
 
-        <div class="card" style="margin-top: 18px;">
-          <h3>Top performing stations</h3>
-          <ul>
-            <li><strong>312th/Campbell:</strong> 473 tickets (highest volume)</li>
-            <li><strong>200th/Caribbean:</strong> 406 tickets</li>
-            <li><strong>Civic Center:</strong> 355 tickets</li>
-            <li><strong>112th/Allapattah:</strong> 345 tickets</li>
-          </ul>
-          <p class="metrics-note"><strong>Peak hours:</strong> 6-8 AM (morning commute) and 4-6 PM (evening commute) showed consistent demand patterns across all stations.</p>
-        </div>
+    <div class="cards-2">
+      <div class="card">
+        <h3>The System</h3>
+        <p>
+          <strong>20-mile dedicated corridor</strong> along the South Dade TransitWay, 
+          parallel to US-1, connecting Florida City to Dadeland South Metrorail Station.
+        </p>
+        <p>
+          <strong>14 stations</strong> serving South Dade communities with direct 
+          Metrorail access, park-and-ride facilities, and Metrobus connections.
+        </p>
+        <p>
+          <strong>Why it matters:</strong> For Homestead, Florida City, and South Dade 
+          residents, this provides rapid, reliable access to employment, education, 
+          and services throughout Miami-Dade County.
+        </p>
       </div>
-    </section>
 
+      <div class="card">
+        <h3>What Makes It Different</h3>
+        <p>
+          MetroExpress operates like a rail line on wheels, not a traditional bus route.
+        </p>
+        <ul style="margin: 10px 0 0 18px; font-size: 0.95rem;">
+          <li><strong>Dedicated infrastructure:</strong> Exclusive South Dade TransitWay 
+          with transit signal priority at intersections</li>
+          <li><strong>Protected crossings:</strong> Automated gate arms and warning lights 
+          like railroad crossings</li>
+          <li><strong>Premium experience:</strong> Fast, predictable, and comfortable, more 
+          akin to light rail than conventional bus service</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Internship Section -->
+<section class="subtle" id="challenge">
+  <div class="container">
+    <h2 style="margin-bottom: 18px;">The Team Internship: EPIC Challenge</h2>
+
+    <p style="max-width: 80ch;">
+      During a six-week EPIC Challenge micro-internship (Oct-Nov 2025), our team 
+      of three data science students, Sally Posey, Betsy Sanchez, and Anabel Ferreiro 
+      Perez, worked with Miami-Dade County DTPW on an exploratory analysis challenge.
+    </p>
+
+    <p style="max-width: 80ch;">
+      <strong>The task:</strong> Analyze early launch data from the new BRT system 
+      and identify insights that could inform ridership growth and digital payment adoption.
+    </p>
+
+    <div class="card" style="margin-top: 18px;">
+      <h3>Team Deliverables</h3>
+      <ul style="margin: 10px 0 0 18px;">
+        <li>PowerPoint presentation analyzing 11 days of launch data (3,596 transactions)</li>
+        <li>Identified 69% cash dominance and station concentration patterns</li>
+        <li>Recommended digital adoption strategies and future ML modeling opportunities</li>
+        <li>Delivered insights in 5-day turnaround during critical launch period</li>
+      </ul>
+      
+      <p style="margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 0.95rem;">
+        <strong>Result:</strong> Work featured in Miami-Dade County employee newsletter.
+      </p>
+    </div>
+
+    <div class="callout" style="margin-top: 16px;">
+      <p style="margin: 0; font-size: 0.92rem;">
+        <strong>Data note:</strong> Launch period included promotional free rides. 
+        Transaction counts represent ticket purchases only; analysis focused on 
+        payment patterns and station trends rather than total ridership.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Launch Period Snapshot -->
+<section id="snapshot">
+  <div class="container">
+    <div class="section-head">
+      <h2>Team Analysis: Launch Period Insights</h2>
+      <p class="section-subtitle">
+        Key patterns identified from ticket vending machine data during the 
+        first 11 days of operations (Oct 27 - Nov 7, 2025).
+      </p>
+    </div>
+
+    <div class="callout" style="margin-bottom: 20px;">
+      <p style="margin: 0; font-size: 0.95rem;">
+        <strong>Data scope:</strong> This analysis captured ticket purchases from 
+        vending machines during the soft launch period. Actual ridership was higher 
+        due to promotional free rides. Our focus was on <strong>payment behavior 
+        patterns</strong> and <strong>station performance trends</strong> rather than 
+        absolute ridership counts.
+      </p>
+    </div>
+
+    <div class="metrics-grid" aria-label="Key metrics">
+      <div class="metric">
+        <div class="metric-value">3,596</div>
+        <div class="metric-label">TVM Transactions</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value">69%</div>
+        <div class="metric-label">Cash payments</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value">31%</div>
+        <div class="metric-label">Digital payments</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value">14</div>
+        <div class="metric-label">Active stations</div>
+      </div>
+    </div>
+
+    <div class="cards-2" style="margin-top: 20px;">
+      <div class="card">
+        <h3>Payment Behavior Pattern</h3>
+        <p>
+          <strong>Key finding:</strong> Nearly 7 in 10 transactions used cash, 
+          indicating significant opportunity for digital adoption campaigns.
+        </p>
+        <p style="margin-top: 10px; font-size: 0.92rem; color: var(--muted);">
+          <strong>Industry context:</strong> Leading transit systems show 70-95% 
+          digital adoption (NYC: 70%, London: 95%, Singapore: 98%).
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Station Performance Pattern</h3>
+        <p>
+          <strong>Top 4 stations:</strong> 312th/Campbell (473), 200th/Caribbean (406), 
+          Civic Center (355), 112th/Allapattah (345)
+        </p>
+        <p style="margin-top: 10px;">
+          <strong>Key finding:</strong> These 4 stations accounted for approximately 
+          44% of all ticket sales, suggesting concentrated demand at key nodes.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 16px;">
+      <h3>Temporal Patterns</h3>
+      <p>Clear commuter-driven demand with consistent patterns across all stations:</p>
+      <ul style="margin: 10px 0 0 18px; font-size: 0.95rem;">
+        <li><strong>Morning peak:</strong> 6-8 AM (primary commute window)</li>
+        <li><strong>Midday activity:</strong> 11 AM-1 PM (moderate usage)</li>
+        <li><strong>Evening peak:</strong> 4-6 PM (return commute)</li>
+        <li><strong>Low activity:</strong> After 7 PM</li>
+      </ul>
+      <p style="margin-top: 10px; font-size: 0.92rem; color: var(--muted);">
+        <strong>Implication:</strong> Service scheduling aligns well with actual demand; 
+        off-peak promotions could help smooth utilization.
+      </p>
+    </div>
+
+    <div style="margin-top: 20px; padding: 16px; background: rgba(15, 118, 110, 0.06); border-left: 3px solid var(--accent); border-radius: 8px;">
+      <p style="margin: 0; font-size: 0.95rem;">
+        <strong>Team recommendation:</strong> Focus digital adoption efforts on the 
+        4 high-volume stations and leverage natural commuter patterns for targeted 
+        marketing campaigns.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboards Section -->
 <section class="subtle" id="dashboards">
   <div class="container">
     <div class="section-head">
@@ -687,49 +826,41 @@
         station performance, and demand patterns.
       </p>
     </div>
-<script type='text/javascript'> 
-  var divElement = document.getElementById('viz1767666614973'); 
-  var vizElement = divElement.getElementsByTagName('object')[0]; 
-  vizElement.style.width = '100%'; vizElement.style.height = '860px'; 
-  var scriptElement = document.createElement('script'); 
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
-    <!-- ===================== -->
- <div class='tableauPlaceholder' id='viz1770357709711' style='position: relative'>
-  <noscript><a href='#'><img alt='Executive OverviewLaunch-period payment behavior and station performance (Oct 27 - Nov 7) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_ExecutiveOverviewDashboard_Oct27Nov20&#47;01ExecutiveOverview&#47;1_rss.png' style='border: none' />
-  </a>
-</noscript>
-<object class='tableauViz'  style='display:none;'>
-  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-  <param name='embed_code_version' value='3' /> 
-  <param name='site_root' value='' />
-  <param name='name' value='BRTLaunch_ExecutiveOverviewDashboard_Oct27Nov20&#47;01ExecutiveOverview' />
-  <param name='tabs' value='no' />
-  <param name='toolbar' value='yes' />
-  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_ExecutiveOverviewDashboard_Oct27Nov20&#47;01ExecutiveOverview&#47;1.png' /> 
-  <param name='animate_transition' value='yes' />
-  <param name='display_static_image' value='yes' />
-  <param name='display_spinner' value='yes' />
-  <param name='display_overlay' value='yes' />
-  <param name='display_count' value='yes' />
-  <param name='language' value='en-US' />
-  <param name='filter' value='publish=yes' />
-</object>
-</div>                
-<script type='text/javascript'>                    var divElement = document.getElementById('viz1770357709711');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1477px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-    <!-- ===================== -->
-    <div class="dashboard" style="margin-bottom: 28px;">
+    <!-- Dashboard 1 -->
+    <div class='tableauPlaceholder' id='viz1770357709711' style='position: relative'>
+      <noscript><a href='#'><img alt='Executive OverviewLaunch-period payment behavior and station performance (Oct 27 - Nov 7) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_ExecutiveOverviewDashboard_Oct27Nov20&#47;01ExecutiveOverview&#47;1_rss.png' style='border: none' /></a></noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='BRTLaunch_ExecutiveOverviewDashboard_Oct27Nov20&#47;01ExecutiveOverview' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_ExecutiveOverviewDashboard_Oct27Nov20&#47;01ExecutiveOverview&#47;1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>                
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1770357709711');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1477px';}                     
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+
+    <div class="dashboard" style="margin-bottom: 28px; margin-top: 20px;">
       <h3>Executive Overview</h3>
       <p class="section-subtitle">
         High-level payment trends and station rankings during the launch period.
       </p>
-
-      <!-- Tableau embed (Executive Overview) -->
-      <div class="viz" aria-label="Executive overview dashboard">
-        <!-- KEEP your existing Tableau embed here -->
-      </div>
 
       <div class="card" style="margin-top: 16px;">
         <h4>Key insight: Cash dominance presents a digital adoption opportunity</h4>
@@ -747,48 +878,42 @@
       </div>
     </div>
 
-    <!-- ===================== -->
- <div class='tableauPlaceholder' id='viz1770357986290' style='position: relative'>
-  <noscript>
-    <a href='#'><img alt='Station &amp; Payment Patterns ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_StationPaymentPatternsDashboard_Oct27Nov20&#47;02StationPaymentPatterns&#47;1_rss.png' style='border: none' />
-    </a>
-  </noscript>
-  <object class='tableauViz'  style='display:none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-    <param name='embed_code_version' value='3' /> 
-    <param name='site_root' value='' />
-    <param name='name' value='BRTLaunch_StationPaymentPatternsDashboard_Oct27Nov20&#47;02StationPaymentPatterns' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_StationPaymentPatternsDashboard_Oct27Nov20&#47;02StationPaymentPatterns&#47;1.png' /> 
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' /
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='en-US' />
-    <param name='filter' value='publish=yes' />
-    </object>
+    <!-- Dashboard 2 -->
+    <div class='tableauPlaceholder' id='viz1770357986290' style='position: relative'>
+      <noscript>
+        <a href='#'><img alt='Station &amp; Payment Patterns ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_StationPaymentPatternsDashboard_Oct27Nov20&#47;02StationPaymentPatterns&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='BRTLaunch_StationPaymentPatternsDashboard_Oct27Nov20&#47;02StationPaymentPatterns' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_StationPaymentPatternsDashboard_Oct27Nov20&#47;02StationPaymentPatterns&#47;1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
     </div>                
     <script type='text/javascript'>                    
-    var divElement = document.getElementById('viz1770357986290');                    
-    var vizElement = divElement.getElementsByTagName('object')[0];                    
-    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     
-    var scriptElement = document.createElement('script');                    
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      var divElement = document.getElementById('viz1770357986290');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
     </script>
-    <!-- ===================== -->
-    <div class="dashboard" style="margin-bottom: 28px;">
+
+    <div class="dashboard" style="margin-bottom: 28px; margin-top: 20px;">
       <h3>Station & Payment Patterns</h3>
       <p class="section-subtitle">
         Detailed station-level breakdowns with interactive filters.
       </p>
-
-      <!-- Tableau embed (Station & Payment Patterns) -->
-      <div class="viz" aria-label="Station and payment patterns dashboard">
-        <!-- SECOND Tableau embed here -->
-      </div>
 
       <div class="cards-2" style="margin-top: 16px;">
         <div class="card">
@@ -816,12 +941,10 @@
       </div>
     </div>
 
-    <!-- ===================== -->
-<div class='tableauPlaceholder' id='viz1770358171276' style='position: relative'>
-  <noscript>
-    <a href='#'>
-      <img alt='Ticket Sales by Hour ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_TicketSalesbyHourDashboard_Oct27Nov20&#47;03TicketSalesbyHour&#47;1_rss.png' style='border: none' />
-      </a>
+    <!-- Dashboard 3 -->
+    <div class='tableauPlaceholder' id='viz1770358171276' style='position: relative'>
+      <noscript>
+        <a href='#'><img alt='Ticket Sales by Hour ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BR&#47;BRTLaunch_TicketSalesbyHourDashboard_Oct27Nov20&#47;03TicketSalesbyHour&#47;1_rss.png' style='border: none' /></a>
       </noscript>
       <object class='tableauViz'  style='display:none;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
@@ -838,35 +961,30 @@
         <param name='display_count' value='yes' />
         <param name='language' value='en-US' />
         <param name='filter' value='publish=yes' />
-        </object>
-        </div>                
-        <script type='text/javascript'>                    
-        var divElement = document.getElementById('viz1770358171276');                    
-        var vizElement = divElement.getElementsByTagName('object')[0];                    
-        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     
-        var scriptElement = document.createElement('script');                    
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-        </script>
-    <!-- ===================== -->
-    <div class="dashboard">
+      </object>
+    </div>                
+    <script type='text/javascript'>                    
+      var divElement = document.getElementById('viz1770358171276');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+
+    <div class="dashboard" style="margin-top: 20px;">
       <h3>Hourly Analysis</h3>
       <p class="section-subtitle">
         Temporal patterns and demand heatmaps across stations.
       </p>
 
-      <!-- Tableau embed (Hourly Analysis) -->
-      <div class="viz" aria-label="Hourly analysis dashboard">
-        <!-- THIRD Tableau embed here -->
-      </div>
-
       <div class="card" style="margin-top: 16px;">
         <h4>Key insight: Temporal patterns validate schedule design</h4>
         <ul>
-          <li>Surge around 4–6 AM</li>
-          <li>Peak 6–8 AM (morning commute)</li>
-          <li>Moderate midday activity (11 AM–1 PM)</li>
-          <li>Second peak 4–6 PM (evening commute)</li>
+          <li>Surge around 4-6 AM</li>
+          <li>Peak 6-8 AM (morning commute)</li>
+          <li>Moderate midday activity (11 AM-1 PM)</li>
+          <li>Second peak 4-6 PM (evening commute)</li>
           <li>Low activity after 7 PM</li>
         </ul>
         <p>
@@ -883,178 +1001,180 @@
   </div>
 </section>
 
-    <section class="subtle" id="ml-analysis">
-      <div class="container">
-        <div class="section-head">
-          <h2>Extended Analysis: Machine Learning Models</h2>
-          <p class="section-subtitle">To demonstrate advanced analytical capabilities and explore longer-term patterns, I extended the dataset to 6 months using synthetic data generation techniques that preserve the statistical characteristics observed in the real launch data.</p>
-        </div>
+<!-- ML Analysis Section -->
+<section class="subtle" id="ml-analysis">
+  <div class="container">
+    <div class="section-head">
+      <h2>Extended Analysis: Machine Learning Models</h2>
+      <p class="section-subtitle">To demonstrate advanced analytical capabilities and explore longer-term patterns, I extended the dataset to 6 months using synthetic data generation techniques that preserve the statistical characteristics observed in the real launch data.</p>
+    </div>
 
-        <p>This extension enables time-series forecasting, predictive modeling, and strategic segmentation analysis, methods that require larger datasets than the initial 11-day launch period could provide.</p>
-        
-        <div class="card" style="margin: 18px 0;">
-          <h3>Extended Dataset</h3>
-          <p><strong>87,875 transactions</strong> across 14 stations (October 27, 2025 - April 27, 2026)</p>
-          <p>The synthetic data generation process preserved key patterns from the real launch data including payment distributions, station-level behaviors, temporal patterns, and digital adoption trends while introducing realistic variation and seasonal effects.</p>
-        </div>
+    <p>This extension enables time-series forecasting, predictive modeling, and strategic segmentation analysis, methods that require larger datasets than the initial 11-day launch period could provide.</p>
+    
+    <div class="card" style="margin: 18px 0;">
+      <h3>Extended Dataset</h3>
+      <p><strong>87,875 transactions</strong> across 14 stations (October 27, 2025 - April 27, 2026)</p>
+      <p>The synthetic data generation process preserved key patterns from the real launch data including payment distributions, station-level behaviors, temporal patterns, and digital adoption trends while introducing realistic variation and seasonal effects.</p>
+    </div>
 
-        <!-- Digital Adoption Trend -->
-        <div class="ml-chart">
-          <h3>Digital Payment Adoption Over Time</h3>
-          <img src="digital_adoption_trend.png" alt="Digital payment adoption trend showing growth from 29% to 44% over 6 months" />
-          <p style="margin-top: 14px;">The extended dataset reveals a clear upward trajectory in digital payment adoption, growing from 29% at launch to 44% after six months, a 15 percentage point increase that validates the effectiveness of Miami-Dade's fare modernization infrastructure.</p>
-          
-          <div class="card" style="margin-top: 14px; background: var(--subtle);">
-            <h4 style="font-size: 1rem; margin-bottom: 8px;">Key observations:</h4>
-            <ul style="margin: 8px 0 0 20px;">
-              <li>Steady baseline growth averaging 2.5 percentage points per month</li>
-              <li>Notable acceleration during major events: Art Basel (December) and Ultra Music Festival (March) showed 5-7% adoption spikes</li>
-              <li>Weekend vs. weekday patterns remained consistent, with slightly higher digital adoption during weekdays</li>
-            </ul>
-          </div>
-          
-          <p style="margin-top: 12px;"><strong>Insight:</strong> Digital adoption is driven primarily by system maturity and rider familiarity rather than promotional campaigns alone, though events provide meaningful short-term boosts.</p>
-        </div>
+    <!-- Digital Adoption Trend -->
+    <div class="ml-chart">
+      <h3>Digital Payment Adoption Over Time</h3>
+      <img src="digital_adoption_trend.png" alt="Digital payment adoption trend showing growth from 29% to 44% over 6 months" />
+      <p style="margin-top: 14px;">The extended dataset reveals a clear upward trajectory in digital payment adoption, growing from 29% at launch to 44% after six months, a 15 percentage point increase that validates the effectiveness of Miami-Dade's fare modernization infrastructure.</p>
+      
+      <div class="card" style="margin-top: 14px; background: var(--subtle);">
+        <h4 style="font-size: 1rem; margin-bottom: 8px;">Key observations:</h4>
+        <ul style="margin: 8px 0 0 20px;">
+          <li>Steady baseline growth averaging 2.5 percentage points per month</li>
+          <li>Notable acceleration during major events: Art Basel (December) and Ultra Music Festival (March) showed 5-7% adoption spikes</li>
+          <li>Weekend vs. weekday patterns remained consistent, with slightly higher digital adoption during weekdays</li>
+        </ul>
+      </div>
+      
+      <p style="margin-top: 12px;"><strong>Insight:</strong> Digital adoption is driven primarily by system maturity and rider familiarity rather than promotional campaigns alone, though events provide meaningful short-term boosts.</p>
+    </div>
 
-        <!-- ML Model 1: Forecasting -->
-        <div class="ml-chart">
-          <h3>ML Model #1: Ridership Forecasting (Prophet)</h3>
-          <img src="forecast_prediction.png" alt="Prophet time-series forecast showing 30-day ridership predictions" />
-          <p style="margin-top: 14px;">Using Facebook's Prophet time-series forecasting algorithm, I built a predictive model to forecast daily ridership patterns for the next 30 days beyond the dataset period. Prophet is designed to handle seasonality, trends, and holiday effects, making it ideal for transit data with strong weekday/weekend patterns and event-driven variations.</p>
-          
-          <div class="model-stats">
-            <div class="stat-item">
-              <span class="stat-label">MAE</span>
-              <span class="stat-value">47</span>
-              <span style="font-size: 0.88rem; color: var(--muted); margin-top: 2px;">transactions/day</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-label">RMSE</span>
-              <span class="stat-value">64</span>
-              <span style="font-size: 0.88rem; color: var(--muted); margin-top: 2px;">transactions/day</span>
-            </div>
-          </div>
-          
-          <p style="margin-top: 14px;"><strong>Results:</strong> The model predicts sustained ridership growth, with daily transactions stabilizing around 580-620 per day by May 2026. The forecast shows maintained weekday peaks and weekend valleys, consistent with established commuter patterns.</p>
-          
-          <p><strong>Business application:</strong> This forecasting capability enables proactive resource allocation, including staffing levels, equipment maintenance scheduling, and capacity planning for Phase 2 expansion.</p>
+    <!-- ML Model 1: Forecasting -->
+    <div class="ml-chart">
+      <h3>ML Model #1: Ridership Forecasting (Prophet)</h3>
+      <img src="forecast_prediction.png" alt="Prophet time-series forecast showing 30-day ridership predictions" />
+      <p style="margin-top: 14px;">Using Facebook's Prophet time-series forecasting algorithm, I built a predictive model to forecast daily ridership patterns for the next 30 days beyond the dataset period. Prophet is designed to handle seasonality, trends, and holiday effects, making it ideal for transit data with strong weekday/weekend patterns and event-driven variations.</p>
+      
+      <div class="model-stats">
+        <div class="stat-item">
+          <span class="stat-label">MAE</span>
+          <span class="stat-value">47</span>
+          <span style="font-size: 0.88rem; color: var(--muted); margin-top: 2px;">transactions/day</span>
         </div>
-
-        <!-- ML Model 2: Classification -->
-        <div class="ml-chart">
-          <h3>ML Model #2: Payment Type Prediction (Random Forest)</h3>
-          <img src="feature_importance.png" alt="Feature importance chart showing which factors predict payment type" />
-          <p style="margin-top: 14px;">To understand which factors most strongly influence payment behavior, I trained a Random Forest classifier to predict whether a given transaction would be cash or digital based on contextual features: days since system launch, station location, hour of day, and day of week.</p>
-          
-          <div class="model-stats">
-            <div class="stat-item">
-              <span class="stat-label">Accuracy</span>
-              <span class="stat-value">62.7%</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-label">Features</span>
-              <span class="stat-value">4</span>
-            </div>
-          </div>
-          
-          <p style="margin-top: 14px;"><strong>Feature importance findings:</strong> The analysis reveals that <strong>time since launch</strong> is the strongest predictor (44% importance), followed by <strong>station location</strong> (28%). Hour of day (25%) shows moderate influence, while day of week (3%) has minimal impact.</p>
-          
-          <div class="callout" style="margin-top: 14px;">
-            <p><strong>Key insight:</strong> Digital adoption is primarily driven by system maturity and station-specific characteristics rather than temporal patterns like weekends or specific hours. This suggests that <strong>location-based interventions</strong> (targeting specific stations) will be more effective than <strong>time-based campaigns</strong> (weekend promotions, rush-hour messaging).</p>
-          </div>
-        </div>
-
-        <!-- ML Model 3: Clustering -->
-        <div class="ml-chart">
-          <h3>ML Model #3: Station Segmentation (K-Means Clustering)</h3>
-          <img src="station_clusters_option3.png" alt="Three-panel clustering visualization showing station segments" />
-          <p style="margin-top: 14px;">Using K-Means clustering, I segmented the 14 BRT stations into three distinct groups based on transaction volume and digital adoption patterns. This segmentation enables targeted resource allocation rather than one-size-fits-all interventions.</p>
-          
-          <div class="cluster-cards">
-            <div class="cluster-card">
-              <span class="cluster-badge primary">Cluster 1</span>
-              <h4>Balanced Adopters</h4>
-              <p style="font-size: 0.95rem; margin: 8px 0;"><strong>8 stations</strong> | 35.3% digital</p>
-              <p style="font-size: 0.92rem; color: var(--muted); margin: 0;">Steady mid-tier performers growing with the system. Examples: 104TH, MARLIN, 136th/HOWARD</p>
-            </div>
-            
-            <div class="cluster-card">
-              <span class="cluster-badge secondary">Cluster 2</span>
-              <h4>Digital Leaders</h4>
-              <p style="font-size: 0.95rem; margin: 8px 0;"><strong>4 stations</strong> | 45.3% digital</p>
-              <p style="font-size: 0.92rem; color: var(--muted); margin: 0;">High-performing stations demonstrating what's achievable. Examples: CIVIC, 312th/CAMPBELL, 200th/CARIBBEAN</p>
-            </div>
-            
-            <div class="cluster-card">
-              <span class="cluster-badge success">Cluster 3</span>
-              <h4>High-Opportunity</h4>
-              <p style="font-size: 0.95rem; margin: 8px 0;"><strong>2 stations</strong> | 31.7% digital</p>
-              <p style="font-size: 0.92rem; color: var(--muted); margin: 0;">High ridership but cash-dependent, maximum ROI potential. Stations: 264th/BAUER, 296th/AVACADO</p>
-            </div>
-          </div>
-          
-          <div class="card" style="margin-top: 18px; background: linear-gradient(135deg, rgba(15, 118, 110, 0.04) 0%, rgba(79, 70, 229, 0.04) 100%);">
-            <h4 style="margin: 0 0 10px;">Strategic insight</h4>
-            <p>Cluster 3 represents the highest-leverage opportunity: these two stations handle 14,242 monthly transactions (16% of system volume) but lag 13.6 percentage points behind Cluster 2's digital adoption rate.</p>
-            <p style="margin: 10px 0 0;"><strong>The opportunity:</strong> If 264th/BAUER and 296th/AVACADO matched Cluster 2's 45.3% digital adoption rate, they would generate approximately <strong>1,933 additional digital transactions per month.</strong></p>
-          </div>
-        </div>
-
-        <!-- Budget Allocation -->
-        <div class="ml-chart">
-          <h3>Data-Driven Resource Allocation Strategy</h3>
-          <img src="budget_allocation.png" alt="Budget allocation pie chart showing 70% to Cluster 3, 20% to Cluster 1, 10% to Cluster 2" style="max-width: 520px; margin: 0 auto;" />
-          <p style="margin-top: 14px;">Based on the clustering analysis, I recommend a differentiated budget allocation approach that focuses resources where they'll have the greatest impact.</p>
-          
-          <div class="cards-2" style="margin: 18px 0;">
-            <div class="card">
-              <h4 style="margin: 0 0 10px;">Cluster 3: $7,000 (70%)</h4>
-              <p style="font-size: 0.95rem; margin: 0;">Intensive digital adoption campaigns at 264th/BAUER and 296th/AVACADO:</p>
-              <ul style="font-size: 0.92rem; margin: 10px 0 0 20px;">
-                <li>Bilingual station ambassadors</li>
-                <li>Enhanced "Tap to Pay" signage</li>
-                <li>"$2 free credit" digital incentive</li>
-                <li>QR code-based app onboarding</li>
-              </ul>
-            </div>
-            
-            <div class="card">
-              <h4 style="margin: 0 0 10px;">Cluster 1: $2,000 (20%)</h4>
-              <p style="font-size: 0.95rem; margin: 0 0 10px;">Maintain steady growth for 8 mid-tier stations</p>
-              
-              <h4 style="margin: 14px 0 10px;">Cluster 2: $1,000 (10%)</h4>
-              <p style="font-size: 0.95rem; margin: 0;">Document best practices from 4 digital leader stations</p>
-            </div>
-          </div>
-          
-          <div class="roi-highlight">
-            <div class="roi-value">320% ROI</div>
-            <div class="roi-label">3-month payback period</div>
-            <div class="model-stats" style="max-width: 600px; margin: 0 auto;">
-              <div class="stat-item">
-                <span class="stat-label">Investment</span>
-                <span class="stat-value" style="font-size: 1.5rem;">$7,000</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-label">Annual Return</span>
-                <span class="stat-value" style="font-size: 1.5rem;">$29,436</span>
-              </div>
-            </div>
-            <p class="roi-note">Based on comprehensive operational efficiencies including processing cost savings ($16,236/year), reduced TVM maintenance, labor optimization, and error reduction. Conservative estimate using processing costs alone: 132% ROI with 5-month payback.</p>
-          </div>
-          
-          <div class="callout" style="margin-top: 18px;">
-            <p><strong>The business case:</strong> Rather than spreading $10,000 equally across 14 stations ($714 each), concentrating 70% of resources on 2 high-potential stations generates meaningfully higher system-wide impact, demonstrating how data-driven segmentation enables strategic resource optimization.</p>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top: 24px; background: rgba(79, 70, 229, 0.06); border-left: 3px solid var(--accent2);">
-          <h3 style="font-size: 1.05rem; margin: 0 0 8px;">Methodology Note</h3>
-          <p style="margin: 0; font-size: 0.95rem;">The extended dataset (87,875 transactions over six months) was synthetically generated using statistical techniques designed to preserve the patterns, distributions, and correlations observed in the real launch data. Insights and recommendations shown here are intended to demonstrate analytical methodology rather than represent actual operational outcomes. The original analysis above (October 27 - November 7, 2025) is based on real client data from the MetroExpress launch period.</p>
+        <div class="stat-item">
+          <span class="stat-label">RMSE</span>
+          <span class="stat-value">64</span>
+          <span style="font-size: 0.88rem; color: var(--muted); margin-top: 2px;">transactions/day</span>
         </div>
       </div>
-    </section>
+      
+      <p style="margin-top: 14px;"><strong>Results:</strong> The model predicts sustained ridership growth, with daily transactions stabilizing around 580-620 per day by May 2026. The forecast shows maintained weekday peaks and weekend valleys, consistent with established commuter patterns.</p>
+      
+      <p><strong>Business application:</strong> This forecasting capability enables proactive resource allocation, including staffing levels, equipment maintenance scheduling, and capacity planning for Phase 2 expansion.</p>
+    </div>
 
+    <!-- ML Model 2: Classification -->
+    <div class="ml-chart">
+      <h3>ML Model #2: Payment Type Prediction (Random Forest)</h3>
+      <img src="feature_importance.png" alt="Feature importance chart showing which factors predict payment type" style="max-width: 580px; margin: 0 auto;" />
+      <p style="margin-top: 14px;">To understand which factors most strongly influence payment behavior, I trained a Random Forest classifier to predict whether a given transaction would be cash or digital based on contextual features: days since system launch, station location, hour of day, and day of week.</p>
+      
+      <div class="model-stats">
+        <div class="stat-item">
+          <span class="stat-label">Accuracy</span>
+          <span class="stat-value">62.7%</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Features</span>
+          <span class="stat-value">4</span>
+        </div>
+      </div>
+      
+      <p style="margin-top: 14px;"><strong>Feature importance findings:</strong> The analysis reveals that <strong>time since launch</strong> is the strongest predictor (44% importance), followed by <strong>station location</strong> (28%). Hour of day (25%) shows moderate influence, while day of week (3%) has minimal impact.</p>
+      
+      <div class="callout" style="margin-top: 14px;">
+        <p><strong>Key insight:</strong> Digital adoption is primarily driven by system maturity and station-specific characteristics rather than temporal patterns like weekends or specific hours. This suggests that <strong>location-based interventions</strong> (targeting specific stations) will be more effective than <strong>time-based campaigns</strong> (weekend promotions, rush-hour messaging).</p>
+      </div>
+    </div>
+
+    <!-- ML Model 3: Clustering -->
+    <div class="ml-chart">
+      <h3>ML Model #3: Station Segmentation (K-Means Clustering)</h3>
+      <img src="station_clusters_option3.png" alt="Three-panel clustering visualization showing station segments" />
+      <p style="margin-top: 14px;">Using K-Means clustering, I segmented the 14 BRT stations into three distinct groups based on transaction volume and digital adoption patterns. This segmentation enables targeted resource allocation rather than one-size-fits-all interventions.</p>
+      
+      <div class="cluster-cards">
+        <div class="cluster-card">
+          <span class="cluster-badge primary">Cluster 1</span>
+          <h4>Balanced Adopters</h4>
+          <p style="font-size: 0.95rem; margin: 8px 0;"><strong>8 stations</strong> | 35.3% digital</p>
+          <p style="font-size: 0.92rem; color: var(--muted); margin: 0;">Steady mid-tier performers growing with the system. Examples: 104TH, MARLIN, 136th/HOWARD</p>
+        </div>
+        
+        <div class="cluster-card">
+          <span class="cluster-badge secondary">Cluster 2</span>
+          <h4>Digital Leaders</h4>
+          <p style="font-size: 0.95rem; margin: 8px 0;"><strong>4 stations</strong> | 45.3% digital</p>
+          <p style="font-size: 0.92rem; color: var(--muted); margin: 0;">High-performing stations demonstrating what's achievable. Examples: CIVIC, 312th/CAMPBELL, 200th/CARIBBEAN</p>
+        </div>
+        
+        <div class="cluster-card">
+          <span class="cluster-badge success">Cluster 3</span>
+          <h4>High-Opportunity</h4>
+          <p style="font-size: 0.95rem; margin: 8px 0;"><strong>2 stations</strong> | 31.7% digital</p>
+          <p style="font-size: 0.92rem; color: var(--muted); margin: 0;">High ridership but cash-dependent, maximum ROI potential. Stations: 264th/BAUER, 296th/AVACADO</p>
+        </div>
+      </div>
+      
+      <div class="card" style="margin-top: 18px; background: linear-gradient(135deg, rgba(15, 118, 110, 0.04) 0%, rgba(79, 70, 229, 0.04) 100%);">
+        <h4 style="margin: 0 0 10px;">Strategic insight</h4>
+        <p>Cluster 3 represents the highest-leverage opportunity: these two stations handle 14,242 monthly transactions (16% of system volume) but lag 13.6 percentage points behind Cluster 2's digital adoption rate.</p>
+        <p style="margin: 10px 0 0;"><strong>The opportunity:</strong> If 264th/BAUER and 296th/AVACADO matched Cluster 2's 45.3% digital adoption rate, they would generate approximately <strong>1,933 additional digital transactions per month.</strong></p>
+      </div>
+    </div>
+
+    <!-- Budget Allocation -->
+    <div class="ml-chart">
+      <h3>Data-Driven Resource Allocation Strategy</h3>
+      <img src="budget_allocation.png" alt="Budget allocation pie chart showing 70% to Cluster 3, 20% to Cluster 1, 10% to Cluster 2" style="max-width: 520px; margin: 0 auto;" />
+      <p style="margin-top: 14px;">Based on the clustering analysis, I recommend a differentiated budget allocation approach that focuses resources where they'll have the greatest impact.</p>
+      
+      <div class="cards-2" style="margin: 18px 0;">
+        <div class="card">
+          <h4 style="margin: 0 0 10px;">Cluster 3: $7,000 (70%)</h4>
+          <p style="font-size: 0.95rem; margin: 0;">Intensive digital adoption campaigns at 264th/BAUER and 296th/AVACADO:</p>
+          <ul style="font-size: 0.92rem; margin: 10px 0 0 20px;">
+            <li>Bilingual station ambassadors</li>
+            <li>Enhanced "Tap to Pay" signage</li>
+            <li>"$2 free credit" digital incentive</li>
+            <li>QR code-based app onboarding</li>
+          </ul>
+        </div>
+        
+        <div class="card">
+          <h4 style="margin: 0 0 10px;">Cluster 1: $2,000 (20%)</h4>
+          <p style="font-size: 0.95rem; margin: 0 0 10px;">Maintain steady growth for 8 mid-tier stations</p>
+          
+          <h4 style="margin: 14px 0 10px;">Cluster 2: $1,000 (10%)</h4>
+          <p style="font-size: 0.95rem; margin: 0;">Document best practices from 4 digital leader stations</p>
+        </div>
+      </div>
+      
+      <div class="roi-highlight">
+        <div class="roi-value">320% ROI</div>
+        <div class="roi-label">3-month payback period</div>
+        <div class="model-stats" style="max-width: 600px; margin: 0 auto;">
+          <div class="stat-item">
+            <span class="stat-label">Investment</span>
+            <span class="stat-value" style="font-size: 1.5rem;">$7,000</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Annual Return</span>
+            <span class="stat-value" style="font-size: 1.5rem;">$29,436</span>
+          </div>
+        </div>
+        <p class="roi-note">Based on comprehensive operational efficiencies including processing cost savings ($16,236/year), reduced TVM maintenance, labor optimization, and error reduction. Conservative estimate using processing costs alone: 132% ROI with 5-month payback.</p>
+      </div>
+      
+      <div class="callout" style="margin-top: 18px;">
+        <p><strong>The business case:</strong> Rather than spreading $10,000 equally across 14 stations ($714 each), concentrating 70% of resources on 2 high-potential stations generates meaningfully higher system-wide impact, demonstrating how data-driven segmentation enables strategic resource optimization.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 24px; background: rgba(79, 70, 229, 0.06); border-left: 3px solid var(--accent2);">
+      <h3 style="font-size: 1.05rem; margin: 0 0 8px;">Methodology Note</h3>
+      <p style="margin: 0; font-size: 0.95rem;">The extended dataset (87,875 transactions over six months) was synthetically generated using statistical techniques designed to preserve the patterns, distributions, and correlations observed in the real launch data. Insights and recommendations shown here are intended to demonstrate analytical methodology rather than represent actual operational outcomes. The original analysis above (October 27 - November 7, 2025) is based on real client data from the MetroExpress launch period.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Recommendations Section -->
 <section id="recommendations">
   <div class="container">
     <div class="section-head">
@@ -1093,7 +1213,7 @@
       <div class="card">
         <h3>Digital adoption playbook</h3>
         <ul>
-          <li>Clear, station-level <strong>“How to Tap &amp; Ride”</strong> panels tailored to BRT flows</li>
+          <li>Clear, station-level <strong>"How to Tap &amp; Ride"</strong> panels tailored to BRT flows</li>
           <li>Proactive app nudges (balance alerts, auto-reload prompts)</li>
           <li>QR codes at high-cash stations linking directly to tutorials or downloads</li>
           <li>Expanded Spanish and Creole messaging where most common</li>
@@ -1108,7 +1228,7 @@
         <h3>Digital-first incentive pilots</h3>
         <ul>
           <li>Make 1-day fare capping highly visible with simple examples</li>
-          <li>Run time-limited “digital-first” pilots at select stations</li>
+          <li>Run time-limited "digital-first" pilots at select stations</li>
           <li>Test messaging focused on saving time, not just money</li>
           <li>Explore reload bonuses or small incentives via community partnerships</li>
         </ul>
@@ -1156,10 +1276,10 @@
         Quantitative data shows <em>what</em> is happening. Short, targeted surveys help explain <em>why</em>.
       </p>
       <ul>
-        <li>“Why did you choose cash today?”</li>
-        <li>“Have you tried the GO Miami-Dade app?”</li>
-        <li>“What would make digital payment easier for you?”</li>
-        <li>“How would you rate the TVM experience (1–5)?”</li>
+        <li>"Why did you choose cash today?"</li>
+        <li>"Have you tried the GO Miami-Dade app?"</li>
+        <li>"What would make digital payment easier for you?"</li>
+        <li>"How would you rate the TVM experience (1–5)?"</li>
       </ul>
       <p>
         <strong>Expected outcome:</strong> Clearer insight into behavioral barriers,
@@ -1178,24 +1298,49 @@
     </div>
   </div>
 </section>
+</main>
 
+<!-- Featured Impact Box (moved to end before footer) -->
+<section style="padding: 32px 0; background: linear-gradient(135deg, rgba(15, 118, 110, 0.06) 0%, rgba(79, 70, 229, 0.06) 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+      <p style="margin: 0 0 8px; font-size: 0.85rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">
+      Featured Recognition
+      </p>
+      <h3 style="margin: 0 0 16px; font-size: 1.5rem; letter-spacing: -0.02em;">
+        "This is what an innovation incubator for local talent looks like."
+      </h3>
+      <p style="margin: 0; color: var(--muted); font-size: 0.95rem;">
+        - <strong>Jarice Rodriguez</strong>, Chief of Paratransit Operations<br>
+        Miami-Dade County Department of Transportation & Public Works
+      </p>
+      <a href="https://secure.miamidade.gov/employee/ithrive/archive/dtpw-interns.page" 
+         target="_blank" 
+         rel="noreferrer"
+         class="btn" 
+         style="margin-top: 16px; display: inline-flex;">
+        Read Full Article in County Newsletter →
+      </a>
+    </div>
+  </div>
+</section>
 
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div>
           <p class="footer-title">Prepared by</p>
-          <p class="footer-meta"><strong>Betsy Sanchez</strong></p>
-          <p class="footer-meta">Transit analytics • Data visualization • Decision support</p>
+          <p class="footer-meta">Betsy Sanchez</p>
+          <p class="footer-meta">Data Science & Analytics | Machine Learning & Business Intelligence</p>
         </div>
         <div class="footer-links" aria-label="Contact links">
           <p class="footer-title">Contact</p>
-          <p class="footer-meta">Email: your.email@example.com</p>
+          <p class="footer-meta">Email: BetsySnchzB@gmail.com</p>
           <p class="footer-meta">LinkedIn: <a href="https://www.linkedin.com/in/betsy-sanchez-b63780192/" target="_blank" rel="noreferrer">linkedin.com/in/betsy-sanchez</a></p>
           <p class="footer-meta">GitHub: <a href="https://github.com/BetsySnchzB" target="_blank" rel="noreferrer">github.com/BetsySnchzB</a></p>
         </div>
       </div>
-      <div class="footer-bottom">BetsySnchzB © 2026. Built with HTML, CSS, and Tableau Public.</div>
+      <div class="footer-bottom">© 2026 Betsy Sanchez • Built with HTML, CSS, and Tableau Public • Deployed on GitHub Pages.</div>
     </div>
   </footer>
 
@@ -1230,7 +1375,7 @@
       }, { root: null, rootMargin: '-30% 0px -60% 0px', threshold: [0.05, 0.15, 0.25, 0.5] });
 
       sections.forEach(function (s) { observer.observe(s); });
-      setActive((location.hash || '#context').slice(1));
+      setActive((location.hash || '#timeline').slice(1));
 
       window.addEventListener('hashchange', function () {
         setActive((location.hash || '').slice(1));
@@ -1238,4 +1383,5 @@
     })();
   </script>
 </body>
+</html>
 </html>
