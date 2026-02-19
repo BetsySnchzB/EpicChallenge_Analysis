@@ -198,10 +198,10 @@
     .meta-label { display: block; color: var(--faint); font-size: 0.84rem; margin-bottom: 2px; }
     .meta-value { display: block; color: var(--text); font-weight: 600; }
 
-    main section { padding: 56px 0; }
+    main section { padding: 72px 0; }
     section.subtle { background: var(--subtle); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
-    .section-head { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 22px; }
+    .section-head { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 28px; }
 
     h2 {
       margin: 0;
@@ -445,12 +445,13 @@
       .cluster-cards { grid-template-columns: 1fr; }
       .model-stats { grid-template-columns: 1fr; }
       .nav { display: none; }
+      main section { padding: 56px 0; }
     }
 
     @media (max-width: 520px) {
       .metrics-grid { grid-template-columns: 1fr; }
       header.hero { padding: 44px 0 18px; }
-      main section { padding: 44px 0; }
+      main section { padding: 48px 0; }
     }
   </style>
 </head>
@@ -495,12 +496,11 @@
 
         <h1>
           <span style="display: block;">MetroExpress BRT</span>
-         <span style="display: block;">Phase 1 | Launch Analytics</span>
-       </h1>
+          <span style="display: block;">Phase 1 | Launch Analytics</span>
+        </h1>
 
         <p class="hero-lede">
-          Early launch insights into ridership patterns and payment behavior for
-          Miami-Dade County's first all-electric Bus Rapid Transit system.
+          Exploratory and predictive analytics for Miami-Dade County's first Bus Rapid Transit system, from launch insights to machine learning-driven strategic modeling.
         </p>
 
         <div class="hero-actions">
@@ -509,42 +509,42 @@
         </div>
       </div>
 
-<aside class="meta-card" aria-label="Project summary">
-  <p class="meta-title">Engagement summary</p>
-  
-  <div class="meta-grid">
-    <p class="meta-item">
-      <span class="meta-label">Client</span>
-      <span class="meta-value">Miami-Dade County DTPW</span>
-    </p>
-    <p class="meta-item">
-      <span class="meta-label">Program</span>
-      <span class="meta-value">Fare Modernization</span>
-    </p>
-    <p class="meta-item">
-      <span class="meta-label">Team Analysis</span>
-      <span class="meta-value">Oct 27 - Nov 7, 2025<br><span style="font-size: 0.84rem; font-weight: 400;">(real launch data)</span></span>
-    </p>
-    <p class="meta-item">
-      <span class="meta-label">Solo Extension</span>
-      <span class="meta-value">Oct 27 '25 - Apr 27 '26<br><span style="font-size: 0.84rem; font-weight: 400;">(synthetic data)</span></span>
-    </p>
-    <p class="meta-item">
-      <span class="meta-label">Team Methods</span>
-      <span class="meta-value">EDA, recommendations</span>
-    </p>
-    <p class="meta-item">
-      <span class="meta-label">Solo Methods</span>
-      <span class="meta-value">Dashboards, ML, ROI</span>
-    </p>
-  </div>
-</aside>
+      <aside class="meta-card" aria-label="Project summary">
+        <p class="meta-title">Engagement summary</p>
+        
+        <div class="meta-grid">
+          <p class="meta-item">
+            <span class="meta-label">Client</span>
+            <span class="meta-value">Miami-Dade County DTPW</span>
+          </p>
+          <p class="meta-item">
+            <span class="meta-label">Program</span>
+            <span class="meta-value">Fare Modernization</span>
+          </p>
+          <p class="meta-item">
+            <span class="meta-label">Team Analysis</span>
+            <span class="meta-value">Oct 27 - Nov 7, 2025<br><span style="font-size: 0.84rem; font-weight: 400;">(real launch data)</span></span>
+          </p>
+          <p class="meta-item">
+            <span class="meta-label">Solo Extension</span>
+            <span class="meta-value">Oct 27 '25 - Apr 27 '26<br><span style="font-size: 0.84rem; font-weight: 400;">(synthetic data)</span></span>
+          </p>
+          <p class="meta-item">
+            <span class="meta-label">Team Methods</span>
+            <span class="meta-value">EDA, recommendations</span>
+          </p>
+          <p class="meta-item">
+            <span class="meta-label">Solo Methods</span>
+            <span class="meta-value">Dashboards, ML, ROI</span>
+          </p>
+        </div>
+      </aside>
     </div>
   </div>
 </header>
 
 <!-- County's 3-Phase Modernization Plan Banner -->
-<div style="background: rgba(15, 118, 110, 0.04); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 16px 0;">
+<div style="background: rgba(15, 118, 110, 0.04); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 20px 0;">
   <div class="container">
     <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
       <div style="flex: 0 0 auto;">
@@ -563,13 +563,14 @@
 
 <main>
 <!-- Project Timeline Section -->
-<section id="timeline" style="padding: 56px 0; background: var(--bg); border-bottom: 1px solid var(--border);">
+<section id="timeline" style="padding: 72px 0; background: var(--bg); border-bottom: 1px solid var(--border);">
   <div class="container">
-    <div style="text-align: center; margin-bottom: 32px;">
-      <h2 style="margin: 0 0 8px;">Project Evolution</h2>
+    <div style="text-align: center; margin-bottom: 40px;">
+      <h2 style="margin: 0 0 12px;">Project Structure</h2>
       <p style="color: var(--muted); margin: 0; max-width: 70ch; margin-left: auto; margin-right: auto;">
-        This analysis evolved from a rapid team internship delivering immediate insights 
-        to an independent framework demonstrating advanced analytical capabilities.
+        This project includes two distinct components: a team-based internship 
+        delivering rapid insights, and a fully independent technical extension 
+        building a scalable analytical framework.
       </p>
     </div>
 
@@ -578,21 +579,22 @@
       <div class="card" style="display: flex; flex-direction: column; height: 100%;">
         <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
           <span style="font-size: 1.5rem;">👥</span>
-          <h3 style="margin: 0;">Team Analysis</h3>
+          <h3 style="margin: 0;">Team Internship</h3>
         </div>
         <p style="color: var(--muted); font-size: 0.95rem; margin: 0 0 12px;">
-          <strong>Oct-Nov 2025</strong> · EPIC Challenge Internship
+          <strong>Oct-Nov 2025</strong> · EPIC Challenge with Miami-Dade County DTPW
         </p>
         
-        <p style="margin: 0 0 10px; font-size: 0.95rem;"><strong>Team members:</strong><br>
-         Betsy Sanchez, Sally Posey, Anabel Ferreiro Perez</p>
+        <p style="margin: 0 0 10px; font-size: 0.95rem;">
+          <strong>Team:</strong> Betsy Sanchez, Sally Posey, Anabel Ferreiro Perez
+        </p>
 
         <p style="margin: 12px 0 8px; font-weight: 600; font-size: 0.9rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.05em;">What we delivered:</p>
         <ul style="margin: 0 0 12px 18px; font-size: 0.95rem;">
-          <li>Exploratory analysis of 11-day launch period (3,596 transactions)</li>
-          <li>PowerPoint presentation with basic graphs</li>
-          <li>Pattern identification: 69% cash dominance, station concentration</li>
-          <li>Recommendations for digital adoption and future ML models</li>
+          <li>Analyzed 11 days of real launch data (3,596 transactions)</li>
+          <li>Conducted exploratory data analysis identifying payment patterns</li>
+          <li>Delivered executive presentation with strategic recommendations</li>
+          <li>Provided rapid insights during critical launch period (5-day turnaround)</li>
         </ul>
 
         <div style="margin-top: auto; padding: 10px; background: rgba(15, 118, 110, 0.06); border-radius: 8px;">
@@ -609,31 +611,36 @@
           <h3 style="margin: 0;">Independent Extension</h3>
         </div>
         <p style="color: var(--muted); font-size: 0.95rem; margin: 0 0 12px;">
-          <strong>Dec 2025-Jan 2026</strong> · Solo Development
+          <strong>Dec 2025-Jan 2026</strong> · Solo Technical Development
         </p>
         
-        <p style="margin: 0 0 10px; font-size: 0.95rem;"><strong>Developer:</strong><br>
-        Betsy Sanchez</p>
+        <p style="margin: 0 0 10px; font-size: 0.95rem;">
+          <strong>Developer:</strong> Betsy Sanchez
+        </p>
 
         <p style="margin: 12px 0 8px; font-weight: 600; font-size: 0.9rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.05em;">What I built:</p>
         <ul style="margin: 0 0 12px 18px; font-size: 0.95rem;">
-          <li>Interactive Tableau dashboards (all 3 shown below)</li>
-          <li>Synthetic data generation (87,875 transactions, 6 months)</li>
-          <li>Three ML models: time-series, classification, clustering</li>
-          <li>Strategic framework with $29K savings & 320% ROI projections</li>
-          <li>This comprehensive case study website</li>
+          <li>Rebuilt analysis as three interactive Tableau dashboards</li>
+          <li>Generated 6-month synthetic dataset (87,875 transactions) for advanced modeling</li>
+          <li>Developed three ML models: forecasting, classification, clustering</li>
+          <li>Created resource allocation framework with $29K savings & 320% ROI projections</li>
+          <li>Built and deployed this comprehensive case study website</li>
         </ul>
 
         <div style="margin-top: auto; padding: 10px; background: rgba(15, 118, 110, 0.06); border-radius: 8px;">
           <p style="margin: 0; font-size: 0.92rem;">
-            <strong>✓ Production-ready analytical framework</strong>
+            <strong>✓ Scalable decision-support framework</strong>
           </p>
         </div>
       </div>
     </div>
 
-    <div class="callout" style="margin-top: 20px;">
-      <p style="margin: 0;"><strong>Note:</strong> The team analysis provided rapid insights during the critical launch period. The independent extension demonstrates advanced capabilities the county could deploy long-term with sufficient data.</p>
+    <div class="callout" style="margin-top: 24px;">
+      <p style="margin: 0;">
+        <strong>Key distinction:</strong> The team internship delivered rapid exploratory 
+        insights during launch. The independent extension transforms that foundation into 
+        a predictive, strategic decision-support system the county could deploy long-term.
+      </p>
     </div>
   </div>
 </section>
@@ -688,7 +695,7 @@
 <!-- Team Internship Section -->
 <section class="subtle" id="challenge">
   <div class="container">
-    <h2 style="margin-bottom: 18px;">The Team Internship: EPIC Challenge</h2>
+    <h2 style="margin-bottom: 24px;">The Team Internship: EPIC Challenge</h2>
 
     <p style="max-width: 80ch;">
       During a six-week EPIC Challenge micro-internship (Oct-Nov 2025), our team 
@@ -701,7 +708,7 @@
       and identify insights that could inform ridership growth and digital payment adoption.
     </p>
 
-    <div class="card" style="margin-top: 18px;">
+    <div class="card" style="margin-top: 24px;">
       <h3>Team Deliverables</h3>
       <ul style="margin: 10px 0 0 18px;">
         <li>PowerPoint presentation analyzing 11 days of launch data (3,596 transactions)</li>
@@ -715,7 +722,7 @@
       </p>
     </div>
 
-    <div class="callout" style="margin-top: 16px;">
+    <div class="callout" style="margin-top: 20px;">
       <p style="margin: 0; font-size: 0.92rem;">
         <strong>Data note:</strong> Launch period included promotional free rides. 
         Transaction counts represent ticket purchases only; analysis focused on 
@@ -736,7 +743,7 @@
       </p>
     </div>
 
-    <div class="callout" style="margin-bottom: 20px;">
+    <div class="callout" style="margin-bottom: 24px;">
       <p style="margin: 0; font-size: 0.95rem;">
         <strong>Data scope:</strong> This analysis captured ticket purchases from 
         vending machines during the soft launch period. Actual ridership was higher 
@@ -765,7 +772,7 @@
       </div>
     </div>
 
-    <div class="cards-2" style="margin-top: 20px;">
+    <div class="cards-2" style="margin-top: 24px;">
       <div class="card">
         <h3>Payment Behavior Pattern</h3>
         <p>
@@ -791,7 +798,7 @@
       </div>
     </div>
 
-    <div class="card" style="margin-top: 16px;">
+    <div class="card" style="margin-top: 20px;">
       <h3>Temporal Patterns</h3>
       <p>Clear commuter-driven demand with consistent patterns across all stations:</p>
       <ul style="margin: 10px 0 0 18px; font-size: 0.95rem;">
@@ -806,7 +813,7 @@
       </p>
     </div>
 
-    <div style="margin-top: 20px; padding: 16px; background: rgba(15, 118, 110, 0.06); border-left: 3px solid var(--accent); border-radius: 8px;">
+    <div style="margin-top: 24px; padding: 16px; background: rgba(15, 118, 110, 0.06); border-left: 3px solid var(--accent); border-radius: 8px;">
       <p style="margin: 0; font-size: 0.95rem;">
         <strong>Team recommendation:</strong> Focus digital adoption efforts on the 
         4 high-volume stations and leverage natural commuter patterns for targeted 
@@ -856,13 +863,13 @@
       vizElement.parentNode.insertBefore(scriptElement, vizElement);                
     </script>
 
-    <div class="dashboard" style="margin-bottom: 28px; margin-top: 20px;">
+    <div class="dashboard" style="margin-bottom: 32px; margin-top: 24px;">
       <h3>Executive Overview</h3>
       <p class="section-subtitle">
         High-level payment trends and station rankings during the launch period.
       </p>
 
-      <div class="card" style="margin-top: 16px;">
+      <div class="card" style="margin-top: 20px;">
         <h4>Key insight: Cash dominance presents a digital adoption opportunity</h4>
         <p>
           69% of tickets during the launch period were purchased using cash, while 31% were made
@@ -909,13 +916,13 @@
       vizElement.parentNode.insertBefore(scriptElement, vizElement);                
     </script>
 
-    <div class="dashboard" style="margin-bottom: 28px; margin-top: 20px;">
+    <div class="dashboard" style="margin-bottom: 32px; margin-top: 24px;">
       <h3>Station & Payment Patterns</h3>
       <p class="section-subtitle">
         Detailed station-level breakdowns with interactive filters.
       </p>
 
-      <div class="cards-2" style="margin-top: 16px;">
+      <div class="cards-2" style="margin-top: 20px;">
         <div class="card">
           <h4>Key insight: Station performance shows clear concentration patterns</h4>
           <p>
@@ -972,13 +979,13 @@
       vizElement.parentNode.insertBefore(scriptElement, vizElement);                
     </script>
 
-    <div class="dashboard" style="margin-top: 20px;">
+    <div class="dashboard" style="margin-top: 24px;">
       <h3>Hourly Analysis</h3>
       <p class="section-subtitle">
         Temporal patterns and demand heatmaps across stations.
       </p>
 
-      <div class="card" style="margin-top: 16px;">
+      <div class="card" style="margin-top: 20px;">
         <h4>Key insight: Temporal patterns validate schedule design</h4>
         <ul>
           <li>Surge around 4-6 AM</li>
@@ -992,12 +999,12 @@
           smooth utilization.
         </p>
       </div>
-    </div>
 
-    <p style="margin-top: 24px; color: var(--faint);">
-      Together, these dashboards provide a baseline view of how MetroExpress is actually being
-      used during its launch period, not just how it was designed.
-    </p>
+      <p style="margin-top: 28px; color: var(--faint);">
+        Together, these dashboards provide a baseline view of how MetroExpress is actually being
+        used during its launch period, not just how it was designed.
+      </p>
+    </div>  
   </div>
 </section>
 
@@ -1005,13 +1012,35 @@
 <section class="subtle" id="ml-analysis">
   <div class="container">
     <div class="section-head">
-      <h2>Extended Analysis: Machine Learning Models</h2>
-      <p class="section-subtitle">To demonstrate advanced analytical capabilities and explore longer-term patterns, I extended the dataset to 6 months using synthetic data generation techniques that preserve the statistical characteristics observed in the real launch data.</p>
+      <h2>Solo Extension: Advanced Analytics Framework</h2>
+      <p class="section-subtitle">
+        Demonstrating how Miami-Dade County could transition from reactive 
+        reporting to strategic forecasting with predictive ML capabilities.
+      </p>
     </div>
 
-    <p>This extension enables time-series forecasting, predictive modeling, and strategic segmentation analysis, methods that require larger datasets than the initial 11-day launch period could provide.</p>
+    <div class="card" style="margin-bottom: 28px; background: linear-gradient(135deg, rgba(15, 118, 110, 0.04) 0%, rgba(79, 70, 229, 0.04) 100%); border-left: 3px solid var(--accent);">
+      <p style="margin: 0 0 14px; font-size: 1.02rem;">
+        After the team internship concluded, I independently built a scalable 
+        analytical framework that Miami-Dade could deploy long-term. This 
+        extension demonstrates:
+      </p>
+      
+      <ul style="margin: 0 0 14px 20px; font-size: 0.98rem; line-height: 1.6;">
+        <li><strong>Predictive capabilities</strong> for proactive resource planning</li>
+        <li><strong>Data-driven budget allocation strategies</strong> based on station segmentation</li>
+        <li><strong>Systematic approach</strong> to digital adoption campaigns</li>
+      </ul>
+      
+      <p style="margin: 0; font-size: 0.98rem; color: var(--muted);">
+        The following ML models show how the county could transition from 
+        reactive reporting to strategic forecasting.
+      </p>
+    </div>
+
+    <p>To enable time-series forecasting, predictive modeling, and strategic segmentation analysis, I extended the dataset to 6 months using synthetic data generation techniques that preserve the statistical characteristics observed in the real launch data.</p>
     
-    <div class="card" style="margin: 18px 0;">
+    <div class="card" style="margin: 24px 0;">
       <h3>Extended Dataset</h3>
       <p><strong>87,875 transactions</strong> across 14 stations (October 27, 2025 - April 27, 2026)</p>
       <p>The synthetic data generation process preserved key patterns from the real launch data including payment distributions, station-level behaviors, temporal patterns, and digital adoption trends while introducing realistic variation and seasonal effects.</p>
@@ -1054,7 +1083,7 @@
         </div>
       </div>
       
-      <p style="margin-top: 14px;"><strong>Results:</strong> The model predicts sustained ridership growth, with daily transactions stabilizing around 580-620 per day by May 2026. The forecast shows maintained weekday peaks and weekend valleys, consistent with established commuter patterns.</p>
+      <p style="margin-top: 14px;"><strong>Results:</strong> The model suggests sustained ridership growth under current trajectory assumptions, with daily transactions stabilizing around 580-620 per day by May 2026. The forecast shows maintained weekday peaks and weekend valleys, consistent with established commuter patterns.</p>
       
       <p><strong>Business application:</strong> This forecasting capability enables proactive resource allocation, including staffing levels, equipment maintenance scheduling, and capacity planning for Phase 2 expansion.</p>
     </div>
@@ -1167,9 +1196,27 @@
       </div>
     </div>
 
+    <!-- Potential Extensions Box -->
+    <div class="card" style="margin-top: 32px; background: rgba(15, 118, 110, 0.04); border-left: 3px solid var(--accent);">
+      <h3 style="font-size: 1.05rem; margin: 0 0 12px;">Potential Extensions</h3>
+      <p style="margin: 0 0 10px; font-size: 0.95rem;">
+        With additional data and resources, this framework could evolve to include:
+      </p>
+      <ul style="margin: 0 0 0 20px; font-size: 0.95rem; line-height: 1.6;">
+        <li><strong>Real-time monitoring:</strong> Live dashboards tracking payment trends and station performance</li>
+        <li><strong>Anomaly detection:</strong> Automated alerts for unusual patterns (equipment failures, fraud)</li>
+        <li><strong>Predictive maintenance:</strong> Forecast TVM downtime based on transaction patterns</li>
+        <li><strong>Cross-system integration:</strong> Combine with Metrobus/Metrorail data for network-wide insights</li>
+        <li><strong>Natural language reporting:</strong> Automated weekly summaries for stakeholders</li>
+      </ul>
+    </div>
+
+    <!-- Methodology Note -->
     <div class="card" style="margin-top: 24px; background: rgba(79, 70, 229, 0.06); border-left: 3px solid var(--accent2);">
       <h3 style="font-size: 1.05rem; margin: 0 0 8px;">Methodology Note</h3>
-      <p style="margin: 0; font-size: 0.95rem;">The extended dataset (87,875 transactions over six months) was synthetically generated using statistical techniques designed to preserve the patterns, distributions, and correlations observed in the real launch data. Insights and recommendations shown here are intended to demonstrate analytical methodology rather than represent actual operational outcomes. The original analysis above (October 27 - November 7, 2025) is based on real client data from the MetroExpress launch period.</p>
+      <p style="margin: 0; font-size: 0.95rem;">
+        The extended dataset (87,875 transactions over six months) was synthetically generated using statistical techniques designed to preserve the patterns, distributions, and correlations observed in the real launch data. Insights and recommendations shown here are intended to demonstrate analytical methodology rather than represent actual operational outcomes. The original analysis above (October 27 - November 7, 2025) is based on real client data from the MetroExpress launch period.
+      </p>
     </div>
   </div>
 </section>
@@ -1186,7 +1233,7 @@
     </div>
 
     <!-- Executive framing -->
-    <div class="card" style="margin-bottom: 18px;">
+    <div class="card" style="margin-bottom: 24px;">
       <p>
         These recommendations are informed by early launch data, station-level analysis,
         and scenario-based modeling. They are intended to guide decision-making and pilot
@@ -1195,7 +1242,7 @@
     </div>
 
     <!-- Goal 1 -->
-    <div class="card" style="margin-bottom: 16px;">
+    <div class="card" style="margin-bottom: 20px;">
       <h3>Goal 1: Accelerate digital payment adoption</h3>
       <p><strong>Current state:</strong> 69% cash, 31% digital during launch.</p>
       <p><strong>Directional target:</strong> ~80% digital adoption within 18 months.</p>
@@ -1240,7 +1287,7 @@
     </div>
 
     <!-- Goal 2 -->
-    <div class="card" style="margin-top: 22px;">
+    <div class="card" style="margin-top: 28px;">
       <h3>Goal 2: Increase MetroExpress ridership</h3>
       <p>
         <strong>Current signal:</strong> Early launch data shows modest but growing demand,
@@ -1259,7 +1306,7 @@
       </div>
     </div>
 
-    <div class="card" style="margin-top: 16px;">
+    <div class="card" style="margin-top: 20px;">
       <h3>Ridership growth focus areas</h3>
       <ul>
         <li>Emphasize time savings and reliability compared to driving</li>
@@ -1270,7 +1317,7 @@
     </div>
 
     <!-- Feedback loop -->
-    <div class="card" style="margin-top: 16px;">
+    <div class="card" style="margin-top: 20px;">
       <h3>Close the loop with rider feedback</h3>
       <p>
         Quantitative data shows <em>what</em> is happening. Short, targeted surveys help explain <em>why</em>.
@@ -1288,7 +1335,7 @@
     </div>
 
     <!-- Wrap-up -->
-    <div class="card" style="margin-top: 18px; background: rgba(15, 118, 110, 0.06); border-left: 3px solid var(--accent);">
+    <div class="card" style="margin-top: 24px; background: rgba(15, 118, 110, 0.06); border-left: 3px solid var(--accent);">
       <h3 style="font-size: 1.05rem; margin: 0 0 8px;">Executive takeaway</h3>
       <p style="margin: 0;">
         Early MetroExpress data suggests strong potential for digital-first adoption and
@@ -1300,18 +1347,18 @@
 </section>
 </main>
 
-<!-- Featured Impact Box (moved to end before footer) -->
-<section style="padding: 32px 0; background: linear-gradient(135deg, rgba(15, 118, 110, 0.06) 0%, rgba(79, 70, 229, 0.06) 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+<!-- Featured Impact Box -->
+<section style="padding: 48px 0; background: linear-gradient(135deg, rgba(15, 118, 110, 0.06) 0%, rgba(79, 70, 229, 0.06) 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="container">
     <div style="max-width: 900px; margin: 0 auto; text-align: center;">
       <p style="margin: 0 0 8px; font-size: 0.85rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">
-      Featured Recognition
+        📰 Featured Recognition
       </p>
       <h3 style="margin: 0 0 16px; font-size: 1.5rem; letter-spacing: -0.02em;">
         "This is what an innovation incubator for local talent looks like."
       </h3>
       <p style="margin: 0; color: var(--muted); font-size: 0.95rem;">
-        - <strong>Jarice Rodriguez</strong>, Chief of Paratransit Operations<br>
+        — <strong>Jarice Rodriguez</strong>, Chief of Paratransit Operations<br>
         Miami-Dade County Department of Transportation & Public Works
       </p>
       <a href="https://secure.miamidade.gov/employee/ithrive/archive/dtpw-interns.page" 
@@ -1330,7 +1377,7 @@
       <div class="footer-grid">
         <div>
           <p class="footer-title">Prepared by</p>
-          <p class="footer-meta">Betsy Sanchez</p>
+          <p class="footer-meta"><strong>Betsy Sanchez</strong></p>
           <p class="footer-meta">Data Science & Analytics | Machine Learning & Business Intelligence</p>
         </div>
         <div class="footer-links" aria-label="Contact links">
@@ -1340,7 +1387,7 @@
           <p class="footer-meta">GitHub: <a href="https://github.com/BetsySnchzB" target="_blank" rel="noreferrer">github.com/BetsySnchzB</a></p>
         </div>
       </div>
-      <div class="footer-bottom">© 2026 Betsy Sanchez • Built with HTML, CSS, and Tableau Public • Deployed on GitHub Pages.</div>
+      <div class="footer-bottom">© 2026 Betsy Sanchez • Built with HTML, CSS, and Tableau Public • Deployed on GitHub Pages</div>
     </div>
   </footer>
 
@@ -1383,5 +1430,4 @@
     })();
   </script>
 </body>
-</html>
 </html>
