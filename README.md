@@ -120,7 +120,7 @@ Support Miami-Dade DTPW's modernization goals:
 
 *ROI modeling uses synthetic data and operational assumptions for methodology demonstration*
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 **Data Analysis & ML:**
 - Python (Pandas, NumPy, Scikit-learn)
@@ -138,10 +138,9 @@ Support Miami-Dade DTPW's modernization goals:
 - Unsupervised clustering (K-Means)
 - Synthetic data generation
 
----
 
 ## Repository Structure
-
+```
 MetroExpress-BRT-Analytics/
 ├── data/               # Launch data (anonymized)
 ├── notebooks/          # Google colab notebooks for EDA & ML
@@ -150,6 +149,7 @@ MetroExpress-BRT-Analytics/
 ├── website/            # HTML/CSS case study files
 ├── README.md           # This file
 └── requirements.txt    # Python dependencies
+```
 
 ## What This Project Demonstrates
 
